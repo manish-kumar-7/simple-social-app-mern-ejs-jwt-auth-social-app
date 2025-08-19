@@ -35,7 +35,7 @@ app.post("/register", async (req, res) => {
         password: hash,
       });
       //secret key is not given directly 
-      let token = jwt.sign({ email: email, userid: user._id }, "shhhh");
+      let token = jwt.sign({ email: email, userid: user._id }, "shhsjkrfbygfvabrvuevbquae3457t98egrvwghh");
       res.cookie("token", token);
       res.redirect("/login");
     });
